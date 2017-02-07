@@ -42,5 +42,6 @@ func runvarg1() {
 func Run() {
 	// runvarg1()
 	// runmultireturn()
-	runclosur()
+	// runclosur()
+	rundefer(1)
 }

@@ -4,6 +4,7 @@ import (
 	"chapter02ex"
 	"fmt"
 	// "mymath"
+	"chapter02ex/algorithms/bubblesort"
 	"flag"
 )
 
@@ -26,9 +27,12 @@ func main() {
 	}
 
 	values, err := chapter02ex.ReadValues(*infile)
+
 	if err != nil {
 		fmt.Println(err)
 	} else {
+		fmt.Println(values)
+		bubblesort.BubbleSort(values)
 		fmt.Println(values)
 		chapter02ex.WriteValues(values, *outfile)
 	}

@@ -1,11 +1,12 @@
 package main
 
 import (
-	"chapter02ex"
+	//"chapter02ex"
 	"fmt"
 	// "mymath"
-	"chapter02ex/algorithms/bubblesort"
+	//"chapter02ex/algorithms/bubblesort"
 	"flag"
+	"chapter03"
 )
 
 var infile *string = flag.String("i", "unsorted.dat", "File contains values for sorting")
@@ -21,19 +22,29 @@ var algorithm *string = flag.String("a", "qsort", "Sort algorithm")
 // 	chapter02.Run()
 // }
 func main() {
-	flag.Parse()
-	if infile != nil {
-		fmt.Println("infile=", *infile)
-	}
+	//flag.Parse()
+	//if infile != nil {
+	//	fmt.Println("infile=", *infile)
+	//}
+	//
+	//values, err := chapter02ex.ReadValues(*infile)
+	//
+	//if err != nil {
+	//	fmt.Println(err)
+	//} else {
+	//	fmt.Println(values)
+	//	bubblesort.BubbleSort(values)
+	//	fmt.Println(values)
+	//	chapter02ex.WriteValues(values, *outfile)
+	//}
+	//var arrayA = []int{1, 2, 3};
+	//var arrayB = arrayA;
+	//arrayB[1]++;
+	//fmt.Println(arrayA);
+	//rect := &chapter03.Rect{0,0,100,100}
+	//fmt.Println(rect.Area())
 
-	values, err := chapter02ex.ReadValues(*infile)
-
-	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(values)
-		bubblesort.BubbleSort(values)
-		fmt.Println(values)
-		chapter02ex.WriteValues(values, *outfile)
-	}
+	fmt.Println("Fuck")
+	var rect = chapter03.CreateRect(0, 0, 100, 101)
+	fmt.Println(rect.Area())
 }

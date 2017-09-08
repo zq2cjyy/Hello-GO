@@ -1,4 +1,4 @@
-package mystudy
+package main
 
 import "fmt"
 

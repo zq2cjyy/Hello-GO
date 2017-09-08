@@ -7,6 +7,7 @@ import (
 	//"chapter02ex/algorithms/bubblesort"
 	"flag"
 	"chapter03"
+	"chapter02"
 )
 
 var infile *string = flag.String("i", "unsorted.dat", "File contains values for sorting")
@@ -47,4 +48,5 @@ func main() {
 	fmt.Println("Fuck")
 	var rect = chapter03.CreateRect(0, 0, 100, 101)
 	fmt.Println(rect.Area())
+	chapter02.Run();
 }

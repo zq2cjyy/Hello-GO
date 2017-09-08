@@ -1,4 +1,4 @@
-package mystudy
+package main
 
 import (
 	"fmt"
@@ -11,12 +11,16 @@ type PersonInfo struct {
 }
 
 func main() {
-	var PersonMap map[string]PersonInfo
-	PersonMap = make(map[string]PersonInfo)
+	//var PersonMap map[string]PersonInfo
+	//PersonMap = make(map[string]PersonInfo)
+
+	PersonMap := make(map[string]PersonInfo)
 
 	PersonMap["1"] = PersonInfo{"1", "luzq", "beijing"}
 	PersonMap["2"] = PersonInfo{"2", "cj", "beijing"}
 	PersonMap["3"] = PersonInfo{"3", "gui", "beijing"}
+
+	//fmt.Println(cap(PersonMap))
 
 	// person, ok := PersonMap["2"]
 	// if ok {

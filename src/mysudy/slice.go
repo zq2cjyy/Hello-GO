@@ -1,6 +1,8 @@
-package main
+package mystudy
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -16,7 +18,6 @@ func main() {
 	mySlice2 := []int{8, 8, 8}
 	//将myslice2复制到myslice结尾
 	mySlice = append(mySlice, mySlice2...)
-
 	//复制内容
 	copy(mySlice, mySlice2)
 	for _, v := range mySlice {

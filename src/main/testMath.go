@@ -8,6 +8,7 @@ import (
 	"flag"
 	"chapter03"
 	"chapter02"
+	"interfaceex"
 )
 
 var infile *string = flag.String("i", "unsorted.dat", "File contains values for sorting")
@@ -49,4 +50,5 @@ func main() {
 	var rect = chapter03.CreateRect(0, 0, 100, 101)
 	fmt.Println(rect.Area())
 	chapter02.Run();
+	interfaceex.Run()
 }

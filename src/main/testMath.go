@@ -1,14 +1,10 @@
 package main
 
 import (
-	//"chapter02ex"
-	"fmt"
 	// "mymath"
 	//"chapter02ex/algorithms/bubblesort"
 	"flag"
-	"chapter03"
-	"chapter02"
-	"interfaceex"
+	"goroutine"
 )
 
 var infile *string = flag.String("i", "unsorted.dat", "File contains values for sorting")
@@ -46,9 +42,10 @@ func main() {
 	//rect := &chapter03.Rect{0,0,100,100}
 	//fmt.Println(rect.Area())
 
-	fmt.Println("Fuck")
-	var rect = chapter03.CreateRect(0, 0, 100, 101)
-	fmt.Println(rect.Area())
-	chapter02.Run();
-	interfaceex.Run()
+	//fmt.Println("Fuck")
+	//var rect = chapter03.CreateRect(0, 0, 100, 101)
+	//fmt.Println(rect.Area())
+	//chapter02.Run();
+	//interfaceex.Run()
+	goroutine.Run2()
 }

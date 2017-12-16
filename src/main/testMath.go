@@ -4,7 +4,7 @@ import (
 	// "mymath"
 	//"chapter02ex/algorithms/bubblesort"
 	"flag"
-	"goroutine"
+	"jsonopt"
 )
 
 var infile *string = flag.String("i", "unsorted.dat", "File contains values for sorting")
@@ -47,5 +47,6 @@ func main() {
 	//fmt.Println(rect.Area())
 	//chapter02.Run();
 	//interfaceex.Run()
-	goroutine.Run2()
+	//goroutine.Run2()
+	jsonopt.RunDecode()
 }

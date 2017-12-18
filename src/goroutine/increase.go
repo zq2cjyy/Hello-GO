@@ -7,8 +7,9 @@ import (
 )
 
 var (
-	counter int
+	counter int64
 	wg      sync.WaitGroup
+	mutex   sync.Mutex
 )
 
 func Run2() {
@@ -22,10 +23,16 @@ func Run2() {
 
 func increase(id int) {
 	defer wg.Done()
-	for i := 0; i < 2; i++ {
-		value := counter
-		runtime.Gosched()
-		value++
-		counter = value
+	for i := 0; i < 100; i++ {
+		mutex.Lock()
+		{
+			value := counter
+			runtime.Gosched()
+			value++
+			counter = value
+		}
+		mutex.Unlock()
+		//atomic.AddInt64(&counter, 1)
+		//runtime.Gosched()
 	}
 }

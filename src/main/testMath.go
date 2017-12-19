@@ -48,5 +48,5 @@ func main() {
 	//chapter02.Run();
 	//interfaceex.Run()
 	//goroutine.Run2()
-	jsonopt.RunDecode()
+	jsonopt.RunEncode()
 }
